@@ -1,8 +1,11 @@
+---
+output: html_document
+---
 **BIOSTATSTICS**
 
 **Why tidy data?**
 _**The tidy data concept:**_
-* provides a standardized layout/organization for data values.
+*provides a standardized layout/organization for data values.
 
 _**Standardized aids:**_
 * data exploration and analysis
