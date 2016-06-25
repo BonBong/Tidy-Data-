@@ -118,15 +118,79 @@ $(document).ready(function () {
 </div>
 
 
-<p><strong>BIOSTATSTICS</strong></p>
-<p><strong>Why tidy data?</strong> <em><strong>The tidy data concept:</strong></em> *provides a standardized layout/organization for data values.</p>
-<p><em><strong>Standardized aids:</strong></em> * data exploration and analysis * data sharing * the develoopment of data cleaning and analysis tools</p>
-<p><strong>Core principles of tidy data</strong> <em><strong>The language of datasets:</strong></em> * datasets consist of <em>values</em> (usually numbers or strings) * every <em>value</em> belongs to a <em>variable</em> and an <em>observation</em></p>
-<p><em><strong>Structure of a tidy dataset:</strong></em> * <em>variables</em> are arranged in <em>columns</em> * <em>observations</em> are arranged in <em>rows</em> * each type of observational unit forms a table</p>
-<p><strong>Common causes of messiness</strong> * column headers are values, not variable names * multiple variables are stored in one column * variables are stored in both rows and columns * multiple types of experimental unit stored in the same table * on type of experimental unit stored in multiple tables</p>
-<p><em><strong>Single document type is stored in multiple tables:</strong></em> Data values about a single type of observational unit mau be spread out over multiple tables or files. These tables and files are often split up by another variable (e.g., each table represents a singles year, person, or location). As long as the format for individual records is consistent, this is an easy problem to fix by merging tables.</p>
-<p><strong>Tools to tidy and manipulate data</strong> <em><strong>The <em>grammer</em> of data cleaning</strong></em> Primary <em>tidyr</em> package verbs: * gather(): gathers multiple columns into key-value pair * spread(): spreads 2 columns (key-value pair) in to multiple columns</p>
-<p><strong>Tools to tidy and manipulate data</strong> <em><strong>The grammmer of manipulating data</strong></em> Primary <em>dplyr</em> package verbs: * select(): focus on a subset of variables (columns) This function has the inherent ability to arrange columns in any order I please. * filter(): focus on a subset of rows * mutate():add new columns * summarize(): produce summary statistics of variables This function is most powerful when applied to <strong>grouped data</strong>. The main idea behind grouping data is that I want to break up my dataset into groups of rows based on the values of one or more variables. The <em>group_by()</em> function is responsible for doing this. * arrange(): re-order rows</p>
+<div id="biostatstics" class="section level1">
+<h1><strong>BIOSTATSTICS</strong></h1>
+<div id="why-tidy-data" class="section level2">
+<h2><strong>Why tidy data?</strong></h2>
+<div id="the-tidy-data-concept" class="section level3">
+<h3><em><strong>The tidy data concept:</strong></em></h3>
+<ul>
+<li>provides a standardized layout/organization for data values.</li>
+</ul>
+</div>
+</div>
+<div id="standardized-aids" class="section level2">
+<h2><em><strong>Standardized aids:</strong></em></h2>
+<ul>
+<li>data exploration and analysis</li>
+<li>data sharing</li>
+<li>the develoopment of data cleaning and analysis tools</li>
+</ul>
+</div>
+<div id="core-principles-of-tidy-data" class="section level2">
+<h2><strong>Core principles of tidy data</strong></h2>
+<div id="the-language-of-datasets" class="section level3">
+<h3><em><strong>The language of datasets:</strong></em></h3>
+<ul>
+<li>datasets consist of <em>values</em> (usually numbers or strings)</li>
+<li>every <em>value</em> belongs to a <em>variable</em> and an <em>observation</em></li>
+</ul>
+</div>
+<div id="structure-of-a-tidy-dataset" class="section level3">
+<h3><em><strong>Structure of a tidy dataset:</strong></em></h3>
+<ul>
+<li><em>variables</em> are arranged in <em>columns</em></li>
+<li><em>observations</em> are arranged in <em>rows</em></li>
+<li>each type of observational unit forms a table</li>
+</ul>
+</div>
+</div>
+<div id="common-causes-of-messiness" class="section level2">
+<h2><strong>Common causes of messiness</strong></h2>
+<ul>
+<li>column headers are values, not variable names</li>
+<li>multiple variables are stored in one column</li>
+<li>variables are stored in both rows and columns</li>
+<li>multiple types of experimental unit stored in the same table</li>
+<li>on type of experimental unit stored in multiple tables</li>
+</ul>
+<div id="single-document-type-is-stored-in-multiple-tables" class="section level3">
+<h3><em><strong>Single document type is stored in multiple tables:</strong></em></h3>
+<p>Data values about a single type of observational unit mau be spread out over multiple tables or files. These tables and files are often split up by another variable (e.g., each table represents a singles year, person, or location). As long as the format for individual records is consistent, this is an easy problem to fix by merging tables.</p>
+</div>
+</div>
+<div id="tools-to-tidy-and-manipulate-data" class="section level2">
+<h2><strong>Tools to tidy and manipulate data</strong></h2>
+<div id="the-grammar-of-data-cleaning" class="section level3">
+<h3><em><strong>The <em>grammar</em> of data cleaning</strong></em></h3>
+<p>Primary <em>tidyr</em> package verbs: * gather(): gathers multiple columns into key-value pair * spread(): spreads 2 columns (key-value pair) in to multiple columns</p>
+</div>
+</div>
+<div id="tools-to-tidy-and-manipulate-data-1" class="section level2">
+<h2><strong>Tools to tidy and manipulate data</strong></h2>
+<div id="the-grammar-of-manipulating-data" class="section level3">
+<h3><em><strong>The grammar of manipulating data</strong></em></h3>
+<ul>
+<li>Primary <em>dplyr</em> package verbs:</li>
+<li>select(): focus on a subset of variables (columns). This function has the inherent ability to arrange columns in any order I please.</li>
+<li>filter(): focus on a subset of rows</li>
+<li>mutate():add new columns</li>
+<li>summarize(): produce summary statistics of variables. This function is most powerful when applied to <strong>grouped data</strong>. The main idea behind grouping data is that I want to break up my dataset into groups of rows based on the values of one or more variables. The <em>group_by()</em> function is responsible for doing this.</li>
+<li>arrange(): re-order rows</li>
+</ul>
+</div>
+</div>
+</div>
 
 
 
