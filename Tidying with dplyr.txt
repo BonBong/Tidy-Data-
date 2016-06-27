@@ -16,10 +16,10 @@ or 'tbl_df'. Use the following code to create a new tbl_df called cran:
 * The first thing to notice is that we don't have to type cran$ip_id, cran$package, and cran$country, as we normally would when referring to columns of a data frame. The select() function knows we are referring to columns of the cran dataset.
 * Also, note that the columns are returned to us in the order we specified, even though ip_id is the rightmost column in the original dataset.
 * Recall that in R, the `:` operator provides a compact notation for creating a sequence of numbers. For example, try 5:20.
-* Normally, this notation is reserved for numbers, but select() allows you to specify a sequence of columns this way, which can save a bunch of typing. Use select(cran,  r_arch:country) to select all columns starting from r_arch and ending with country.
+* Normally, this notation is reserved for numbers, but **select()** allows you to specify a sequence of columns this way, which can save a bunch of typing. Use select(cran,  r_arch:country) to select all columns starting from r_arch and ending with country.
 * We can also select the same columns in reverse order. Give it a try.
 * Instead of specifying the columns we want to keep, we can also specify the columns we want to throw away. To see how this works, do select(cran, -time) to omit the time column.
-* Now that you know how to select a subset of columns using select(), a natural next question is "How do I select a subset of rows?" That's where the filter() function comes in.
+* Now that you know how to select a subset of columns using **select()**, a natural next question is "How do I select a subset of rows?" That's where the **filter()** function comes in.
 * Use filter(cran, package == "swirl") to select all rows for which the package variable is equal to "swirl". Be sure to use two equals signs side-by-side!
 * You can specify as many conditions as you want, separated by commas. For example filter(cran, r_version == "3.1.1", country == "US") will return all rows of cran corresponding to downloads from users in the US running R version 3.1.1.
 * Sometimes we want to order the rows of a dataset according to the values of a particular variable. This is the job of arrange().
