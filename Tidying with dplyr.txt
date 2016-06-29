@@ -17,7 +17,7 @@ or 'tbl_df'. Use the following code to create a new tbl_df called cran:
 * Also, note that the columns are returned to us in the order we specified, even though ip_id is the rightmost column in the original dataset.
 * Recall that in R, the `:` operator provides a compact notation for creating a sequence of numbers. For example, try 5:20.
 * Normally, this notation is reserved for numbers, but **select()** allows you to specify a sequence of columns this way, which can save a bunch of typing. Use select(cran,  r_arch:country) to select all columns starting from r_arch and ending with country.
-* We can also select the same columns in reverse order. Give it a try.
+* We can also select the same columns in reverse order. Give it a try
 * Instead of specifying the columns we want to keep, we can also specify the columns we want to throw away. To see how this works, do select(cran, -time) to omit the time column.
 * Now that you know how to select a subset of columns using **select()**, a natural next question is "How do I select a subset of rows?" That's where the **filter()** function comes in.
 * Use filter(cran, package == "swirl") to select all rows for which the package variable is equal to "swirl". Be sure to use two equals signs side-by-side!
